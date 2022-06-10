@@ -182,22 +182,10 @@ section .join__button{
 
 
 footer{
-    display: none;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 0vh;
-    min-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-
-
-footer p{
-    align-self: center;
-}
-
-
-
 
 
 @media (min-width: 720px) {
