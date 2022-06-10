@@ -230,31 +230,17 @@ section .join__button{
 
 
 .staff{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f;
 }
 
 
 footer{
+    min-height: 10rem;
+    min-width: 37.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
+    background-color: #E1FD70;
 }
-
-@media (min-width: 720px) {
-}
-
-
-
-
-
-
-
-
-
