@@ -238,6 +238,7 @@ section .join__button{
 }
 
 .findpartners{
+    background-color: #E1FD70;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -256,24 +257,25 @@ section .join__button{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
 
 
 .panels{
+    background-color: #E1FD70;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
 
 
 .staff{
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -327,8 +329,8 @@ section .join__button{
 
 
 footer{
+    width: 100%;
     min-height: 10rem;
-    min-width: 37.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
