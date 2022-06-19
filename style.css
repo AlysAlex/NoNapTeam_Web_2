@@ -117,6 +117,109 @@ main {
   text-align: center;
 }
 
+.join {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62vh;
+  margin-top: 45px;
+}
+
+.join__img {
+  align-self: center;
+  justify-content: center;
+  width: 265px;
+  height: 155px;
+}
+
+section .join__button {
+  align-self: center;
+  justify-content: center;
+  width: 160px;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 2px solid black;
+  background-color: white;
+
+}
+
+.text1 {
+  width: 100%;
+  height: 40%;
+  margin-top: 40px;
+}
+
+.text1 h4 {
+  font-size: 14px;
+
+}
+
+.text1 p {
+  margin-top: 5px;
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 12px;
+}
+
+.popularThemes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 45px;
+}
+
+.findpartners {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 45px;
+
+}
+
+.connection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 45px;
+}
+
+.panels {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 45px;
+}
+
+.staff {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 45px;
+}
+
 footer {
   display: none;
   position: relative;
@@ -131,3 +234,4 @@ footer p {
   align-self: center;
 }
 
+@media (min-width: 720px) {}
