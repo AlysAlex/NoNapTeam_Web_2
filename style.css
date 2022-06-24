@@ -21,21 +21,27 @@ html{
 
 
 header{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows: repeat(6, 16.66%);
     background-color: #E1FD70;
     width: 100%;
-    min-width: 320px;
+    min-width: 32rem;
+    min-height: 28vh;
     max-height: 32vh;
 }
 
 
 .logo{
+    grid-area: 1 / 1 / 6 / 3;
+}
+
+.logo__img{
+    min-width: 7.4rem;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 header div .logo__text{
@@ -46,21 +52,12 @@ header div .logo__text{
     margin-top: 10px;
 }
 
-.logo__img{
-    justify-content: center;
-    margin-left: 35px;
-    margin-top: 20px;
-    width: 78px;
-    height: 100px;
-}
-
 .logo__main{
     align-self: center;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-right: 50px;
     height: fit-content;
-
 }
 
 
@@ -92,28 +89,33 @@ header .logo__section{
 }
 
 
-.nav{
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
+.nav--itemBox{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav--itemFont{
+    font-size: 1.8rem;
+    color:black;
 }
 
 
-.nav .nav__item{
-    font-size: 18px;
-    color: black;
-    border: 2px solid black;
-    width: 50%;
+.navInicio{
+    grid-area: 6 / 1 / 7 / 4;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
 }
 
 
-.nav .nav__item--2{
-    font-size: 18px;
-    color: black;
-    border: 2px solid black;
-    width: 50%;
+.navContactanos{
+    grid-area: 6 / 4 / 7 / 7;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+
 }
 
 main{
