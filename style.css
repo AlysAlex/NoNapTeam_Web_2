@@ -20,7 +20,7 @@ html{
 }
 
 
-header{
+.headerGrid{
     display: grid;
     grid-template-columns: repeat(6, 16.66%);
     grid-template-rows: repeat(6, 16.66%);
@@ -31,25 +31,28 @@ header{
     max-height: 32vh;
 }
 
-
-.logo{
-    grid-area: 1 / 1 / 6 / 3;
-}
-
 .logo__img{
-    min-width: 7.4rem;
+    grid-area: 1 / 1 / 6 / 3;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: right;
+    position: relative;
+    right: 0.6rem;
+
 }
 
-header div .logo__text{
+.logo__img--style{
+    width: 7rem;
+}
+
+.logo__text{
+    grid-area: 2 / 3 / 4 / 6;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: fit-content;
-    margin-top: 10px;
+    align-items: center;
+    position: relative;
+    right: 0.9rem;
+    font-size: 2.1rem;
 }
 
 .logo__main{
@@ -61,31 +64,31 @@ header div .logo__text{
 }
 
 
-header .logo__section{
-    margin-left: 20px;
-    padding-left: 20px;
-    width: fit-content;
-    margin-left: 50px;
+.logo__slogan{
+    grid-area: 4 / 4 / 6 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 1.1rem;
+    right: 1.65rem;
 }
 
 
-.logo__subtitle{
-    font-size: 11px;
+.logo--itemFont{
+    font-size: 1.1rem;
     letter-spacing: 0.185em;
-    mix-blend-mode: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
-.logo__subbackground{
+.logo--itemBox{
     border: 1px solid black;
     background-color: rgba(245, 245, 245, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 112px;
-    height: 23px;
+    width: 12rem;
+    height: 2.3rem;
     padding-left: 5px;
-    padding-top: 2px;
-    padding-bottom: 1px;
+    padding-top: 4px;
 }
 
 
@@ -104,14 +107,14 @@ header .logo__section{
 }
 
 
-.navInicio{
+.nav__button1{
     grid-area: 6 / 1 / 7 / 4;
     border-left: 2px solid black;
     border-right: 1px solid black;
 }
 
 
-.navContactanos{
+.nav__button2{
     grid-area: 6 / 4 / 7 / 7;
     border-right: 2px solid black;
     border-left: 1px solid black;
@@ -204,9 +207,9 @@ section .join__button{
     width: 80%;
     height: 60%;
     padding: 3rem 2rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 15rem 5rem 5rem 5rem;
+    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
 
