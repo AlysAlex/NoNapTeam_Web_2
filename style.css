@@ -22,8 +22,8 @@ html{
 
 .headerGrid{
     display: grid;
-    grid-template-columns: repeat(6, 16.66%);
-    grid-template-rows: repeat(6, 16.66%);
+    grid-template-columns: 31.32% 18.66% 49.98%;
+    grid-template-rows: 83.3%  16.66%;
     background-color: #E1FD70;
     width: 100%;
     min-width: 32rem;
@@ -32,12 +32,10 @@ html{
 }
 
 .logo__img{
-    grid-area: 1 / 1 / 6 / 3;
+    grid-area: 1 / 1 / 2 / 2;
     display: flex;
     align-items: center;
     justify-content: right;
-    position: relative;
-    right: 0.6rem;
 
 }
 
@@ -45,50 +43,47 @@ html{
     width: 7rem;
 }
 
-.logo__text{
-    grid-area: 2 / 3 / 4 / 6;
+.logo__nombreSlogan{
+    grid-area: 1 / 2 / 2 / 4;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo__nombre{
     position: relative;
-    right: 0.9rem;
-    font-size: 2.1rem;
+    bottom: 0.45rem;
+    right: 2.4rem;
 }
 
-.logo__main{
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-right: 50px;
-    height: fit-content;
+.logo__nombre--font{
+    font-size: 2.75rem;
 }
-
 
 .logo__slogan{
-    grid-area: 4 / 4 / 6 / 7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    bottom: 1.1rem;
-    right: 1.65rem;
+    top: 0.45rem;
+    right: 0.25rem;
 }
 
-
-.logo--itemFont{
-    font-size: 1.1rem;
+.logo__slogan--font{
+    font-family: Inconsolata;
+    font-size: 1.25rem;
+    font-weight: 500;
     letter-spacing: 0.185em;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: rgba(245, 245, 245, 0.6);
+    -webkit-text-stroke:0.7px black;
+    -webkit-text-fill-color:transparent;
 }
 
-.logo--itemBox{
-    border: 1px solid black;
+.logo__slogan--box{
     background-color: rgba(245, 245, 245, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 12rem;
+    width: 15rem;
     height: 2.3rem;
-    padding-left: 5px;
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 
@@ -108,14 +103,14 @@ html{
 
 
 .nav__button1{
-    grid-area: 6 / 1 / 7 / 4;
+    grid-area: 2 / 1 / 3 / 3;
     border-left: 2px solid black;
     border-right: 1px solid black;
 }
 
 
 .nav__button2{
-    grid-area: 6 / 4 / 7 / 7;
+    grid-area: 2 / 3 / 3 / 4;
     border-right: 2px solid black;
     border-left: 1px solid black;
 
@@ -205,40 +200,77 @@ section .join__button{
 .popularThemes__rectangle{
     background-color: #FCF9EA;
     width: 80%;
-    height: 60%;
-    padding: 3rem 2rem;
     display: grid;
-    grid-template-columns: 15rem 5rem 5rem 5rem;
-    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
+    grid-template-columns: 10% 40% repeat(3, 13.33%) 10%;
+    grid-template-rows: 15px repeat(4, 7.5vh) 13px;
+    font-size: 1.1rem;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 
+.text__item1--grid{
+    grid-area: 2 / 2 / 3 / 3;
+}
 
-.rectangle__text{
+.text__item2--grid{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.text__item3--grid{
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.text__item4--grid{
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.users__item1--grid{
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.users__item2--grid{
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.users__item3--grid{
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.users__item4--grid{
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.text__item--position{
     display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    width: 50%;
+    text-align: start;
+    align-items: center;
 }
 
-.text__item{
-    margin-bottom: 1rem;
+.icons__item1--grid{
+    grid-area: 2 / 5 / 3 / 6;
 }
 
+.icons__item2--grid{
+    grid-area: 3 / 5 / 4 / 6;
+}
 
-.rectangle__icons{
-    width: 50%;
+.icons__item3--grid{
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.icons__item4--grid{
+    grid-area: 5 / 5 / 6 / 6;
+}
+
+.iconsUsers__item--position{
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding-top: 3rem;
+    align-items: center;
+    justify-content: right;
 }
 
-.icons__items{
-    align-self: flex-end;
-    margin-bottom: 1.6rem;
-    width: 15px;
+.icons__item--style{
+    width: 2rem;
 }
 
 .findpartners{
@@ -276,94 +308,116 @@ section .join__button{
     height: 100vh;
 }
 
-
-.staff{
+.staffGrid{
+    height: 73.5vh;
     width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.staff__rectangle{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: repeat(2, 50%);
 }
 
 
 .staff__title{
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    grid-area: 1 / 1 / 3 / 2;
 }
 
-.rectangle__imgs{
+.staff__img1{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.staff__img2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 
-.rectangle__epigraphs{
+.staff__name1{
     width: 100%;
     height: 3rem;
     align-items: center;
     display: flex;
     justify-content: space-around;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
-.rectangle__img{
-    width: 15rem;
-    height: 15rem;
+.staff__name2{
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 
-.tucho_img{
+.staff__img__tucho{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
-footer{
+.footerGrid{
     width: 100%;
-    min-height: 20vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
+    height: 26.5vh;
     background-color: #E1FD70;
-    text-align: start;
+    display: grid;
+    grid-template-columns: 37.33% 39.33% 21.33%;
+    grid-template-rows: 17% 63% 20%;
 }
 
-.footer__sponsor{
-    align-self: flex-start;
-    grid-row: 2;
-    grid-column: 1;
+.sponsor__img{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 1rem;
 }
 
-.footer__info{
-    align-self: flex-start;
-    grid-row: 2;
-    grid-column: 2;
+.info__developers{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;   
 }
 
-.footer__info--1{
-    align-self: flex-start;
-    grid-row: 2;
-    grid-column: 3;
+.info__demas{
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;  
 }
 
-.footer__socials{
-    align-self: center;
-    grid-row: 4;
-    grid-column: 2;
+.socials__img{
+    grid-area: 3 / 1 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.socials__img--position{
+    position: relative;
+    left: 1.2rem;
+}
 
+.info--title{
+    font-family: Iceberg;
+    font-size: 1.4rem;
+}
+
+.info--text{
+    font-family: Alumni Sans;
+    font-size: 1.60rem;
+    font-weight: 600;
+    position: relative;
+    top: 1.5rem;
+}
