@@ -19,11 +19,10 @@ html{
     font-family: 'Iceberg', cursive;
 }
 
-
 .headerGrid{
     display: grid;
     grid-template-columns: 31.32% 18.66% 49.98%;
-    grid-template-rows: 83.3%  16.66%;
+    grid-template-rows: 41.65% 41.65%  16.66%;
     background-color: #E1FD70;
     width: 100%;
     min-width: 32rem;
@@ -32,7 +31,7 @@ html{
 }
 
 .logo__img{
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 3 / 2;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -43,28 +42,24 @@ html{
     width: 7rem;
 }
 
-.logo__nombreSlogan{
+.logo__nombre{
     grid-area: 1 / 2 / 2 / 4;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 1rem;
 }
 
-.logo__nombre{
-    position: relative;
-    bottom: 0.45rem;
-    right: 2.4rem;
-}
-
-.logo__nombre--font{
+.logo__nombre--style{
     font-size: 2.75rem;
 }
 
 .logo__slogan{
-    position: relative;
-    top: 0.45rem;
-    right: 0.25rem;
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem;
 }
 
 .logo__slogan--font{
@@ -103,103 +98,105 @@ html{
 
 
 .nav__button1{
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 3 / 1 / 4 / 3;
     border-left: 2px solid black;
     border-right: 1px solid black;
 }
 
 
 .nav__button2{
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 3 / 3 / 4 / 4;
     border-right: 2px solid black;
     border-left: 1px solid black;
 
 }
 
-main{
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
+.firstSection{
     width: 100%;
+    height: 123vh;
+    display: grid;
+    grid-template-rows: 3.5% 35.5% 19.5% 38% 3.5%;
+    grid-template-columns: 8% 84% 8%;
+}
+
+.join__img {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    right: 0.65rem;
+}
+
+.join__img--style{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+.join__button{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.join__button--style{
+    font-size: 1.6rem;
+    font-family: Iceberg;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    margin: 1rem;
+}
+
+.attractiveText{
+    grid-area: 3 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 
-.join{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 42vh;
-    margin-top: 45px;
+.attractiveText h4{
+    font-size: 1.5rem;
+    margin: 1rem;    
 }
 
 
-.join__img{
-    align-self: center;
-    justify-content: center;
-    width: 265px;
-    height: 155px;
-}
-
-
-section .join__button{
-    align-self: center;
-    justify-content: center;
-    width: 160px;
-    height: 35px;
-    font-size: 16px;
-    margin-top: 20px;
-    border: 2px solid black;
-    background-color: white;
-
-}
-
-
-.text1{
-    width: 100%;
-    height: 17vh;
-    margin-top: 40px;
-}
-
-
-.text1 h4{
-    font-size: 14px;
-    
-}
-
-
-.text1 p{
-    margin-top: 5px;
+.attractiveText p{
+    margin: 0.5rem;
     font-family: 'Alumni Sans', sans-serif;
-    font-size: 12px;
+    font-size: 1.6rem;
+
 }
 
 
 .popularThemes{
+    grid-area: 4 / 2 / 5 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 
 .popularThemes__title{
     color: #B6D637;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
 .popularThemes__rectangle{
     background-color: #FCF9EA;
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: 10% 40% repeat(3, 13.33%) 10%;
     grid-template-rows: 15px repeat(4, 7.5vh) 13px;
@@ -207,6 +204,8 @@ section .join__button{
     font-family: Inter;
     font-weight: 400;
     line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .text__item1--grid{
@@ -273,124 +272,196 @@ section .join__button{
     width: 2rem;
 }
 
-.findpartners{
-    background-color: #E1FD70;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.secondSection{
     width: 100%;
-    height: 50vh;
-
+    height: 182vh;
+    display: grid;
+    grid-template-rows: 31.30% 34% 34.7%;
+    text-align: center;
 }
 
+.findpartners{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #E1FD70;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .connection{
-    position: relative;
+    grid-area: 2 / 1 / 3 / 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    min-height: 100vh;
 }
 
-
 .panels{
+    grid-area: 3 / 1 / 4 / 2;
     background-color: #E1FD70;
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+}
+
+.findpartners__img{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.findpartners__img--style{
+    width: 95%;
+}
+
+.findpartners h4{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.findpartners p{
+    font-size: 1.7rem;
+    font-family: Alumni Sans;
+    margin: 0.5rem;
+}
+
+.connection__img{
+    margin-bottom: 0.7rem;
+    margin-top: 1.5rem;
+}
+
+.connection__img--style{
+    width: 80%;
+    margin: 1rem;
+}
+
+.connection h4{
+    font-size: 1.5rem;
+    margin: 0.7rem;
+    width: 90%;
+}
+
+.connection p{
+    font-size: 1.7rem;
+    font-family: Alumni Sans;
+    margin: 0.5rem;
+    width: 85%;
+}
+
+.panels__img{
+    margin-bottom: 0.7rem;
+    margin-top: 1.5rem;
+}
+
+.panels__img--style{
+    width: 70%;
+}
+
+.panels h4{
+    font-size: 1.5rem;
+    margin: 0.7rem;
+    width: 80%;
+}
+
+.panels p{
+    font-size: 1.7rem;
+    font-family: Alumni Sans;
+    margin: 0.5rem;
+    width: 75%;
 }
 
 .staffGrid{
-    height: 73.5vh;
+    height: 50vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 25% 50% 25%;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 8% 28% 35% 21% 8%;
+    grid-template-columns: 8% 36% 12% 36% 8%;
 }
 
 
 .staff__title{
-    font-size: 3rem;
-    grid-area: 1 / 1 / 3 / 2;
+    font-size: 2rem;
+    grid-area: 2 / 2 / 3 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .staff__img1{
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 .staff__img2{
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 3 / 4 / 4 / 5;
 }
 
 
 .staff__name1{
-    width: 100%;
-    height: 3rem;
-    align-items: center;
     display: flex;
-    justify-content: space-around;
-    grid-area: 3 / 1 / 4 / 2;
+    justify-content: center;
+    align-items: center;
+    grid-area: 4 / 2 / 5 / 3;
+    font-family: Alumni Sans;
+    font-size: 2.2rem;
+
 }
 
 .staff__name2{
-    width: 100%;
-    height: 3rem;
-    align-items: center;
     display: flex;
-    justify-content: space-around;
-    grid-area: 3 / 2 / 4 / 3;
+    justify-content: center;
+    align-items: center;
+    grid-area: 4 / 4 / 5 / 5;
+    font-family: Alumni Sans;
+    font-size: 2.2rem;
 }
 
 
 .staff__img__tucho{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 70%;
 }
 
+.staff__img__carricita{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 70%;
+}
 
 .footerGrid{
     width: 100%;
-    height: 26.5vh;
+    height: 30.5vh;
     background-color: #E1FD70;
     display: grid;
-    grid-template-columns: 37.33% 39.33% 21.33%;
-    grid-template-rows: 17% 63% 20%;
+    grid-template-columns: 8% 21.33% 9% 30.23% 9% 14.43% 8%;
+    grid-template-rows: 15% 71% 15%;
 }
 
 .sponsor__img{
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 2 / 2 / 3 / 3;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
-    bottom: 1rem;
+    right: 1rem;
+    bottom: 0.26rem;
 }
 
 .info__developers{
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 4 / 3 / 5;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: left;   
+    align-items: flex-start;   
 }
 
 .info__demas{
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 2 / 6 / 3 / 7;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -398,15 +469,10 @@ section .join__button{
 }
 
 .socials__img{
-    grid-area: 3 / 1 / 4 / 4;
+    grid-area: 2 / 4 / 3 / 5;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-}
-
-.socials__img--position{
-    position: relative;
-    left: 1.2rem;
+    align-items: flex-end;
 }
 
 .info--title{
