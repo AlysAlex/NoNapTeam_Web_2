@@ -26,7 +26,7 @@ html{
     background-color: #E1FD70;
     width: 100%;
     min-width: 32rem;
-    min-height: 28vh;
+    min-height: 29vh;
     max-height: 32vh;
 }
 
@@ -113,9 +113,9 @@ html{
 
 .firstSection{
     width: 100%;
-    height: 123vh;
+    height: 137vh;
     display: grid;
-    grid-template-rows: 3.5% 35.5% 19.5% 38% 3.5%;
+    grid-template-rows: 3.5% 34.2% 24.3% 34.5% 3.5%;
     grid-template-columns: 8% 84% 8%;
 }
 
@@ -126,10 +126,11 @@ html{
     justify-content: center;
     position: relative;
     right: 0.65rem;
+    top:0.4rem;
 }
 
 .join__img--style{
-    width: 100%;
+    width: auto;
     margin-top: 1rem;
 }
 
@@ -170,7 +171,7 @@ html{
 
 
 .attractiveText p{
-    margin: 0.5rem;
+    margin: 1rem;
     font-family: 'Alumni Sans', sans-serif;
     font-size: 1.6rem;
 
@@ -181,7 +182,7 @@ html{
     grid-area: 4 / 2 / 5 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -276,7 +277,7 @@ html{
     width: 100%;
     height: 182vh;
     display: grid;
-    grid-template-rows: 31.30% 34% 34.7%;
+    grid-template-rows: 31% 34.30% 34.7%;
     text-align: center;
 }
 
